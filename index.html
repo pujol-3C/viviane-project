@@ -1,157 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Independência do Brasil</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana de Arte Moderna de 1922</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: linear-gradient(135deg, #003366, #00509e);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+        }
+        section {
+            padding: 4rem 2rem;
+        }
+        .galeria img {
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #003366;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-  <!-- Cabeçalho -->
-  <header class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Independência do Brasil</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <nav class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#linha-tempo">Linha do tempo</a></li>
-          <li class="nav-item"><a class="nav-link" href="#personagens">Personagens</a></li>
-          <li class="nav-item"><a class="nav-link" href="#curiosidades">Curiosidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="#formulario">Formulário</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Abertura -->
-  <section id="inicio" class="inicio text-center text-white d-flex flex-column justify-content-center align-items-center">
-    <div class="overlay"></div>
-    <div class="conteudo">
-      <h1 class="display-4 fw-bold">7 de Setembro de 1822</h1>
-      <p class="lead fst-italic">"Independência ou Morte!" – D. Pedro I</p>
-    </div>
-  </section>
-
-  <!-- Linha do tempo -->
-  <section id="linha-tempo" class="container py-5">
-    <h2 class="text-center mb-4">Linha do Tempo</h2>
-    <ul class="timeline">
-      <li><span>1808</span> Família Real chega ao Brasil fugindo das tropas de Napoleão.</li>
-      <li><span>1821</span> Revoltas e pressões em Portugal exigem a volta de D. Pedro.</li>
-      <li><span>09/01/1822</span> Dia do Fico: D. Pedro decide permanecer no Brasil.</li>
-      <li><span>07/09/1822</span> Às margens do Ipiranga, D. Pedro proclama a independência.</li>
-      <li><span>12/10/1822</span> D. Pedro é aclamado Imperador do Brasil.</li>
-      <li><span>01/12/1822</span> D. Pedro I é coroado oficialmente.</li>
-    </ul>
-  </section>
-
-  <!-- Personagens -->
-  <section id="personagens" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Personagens Importantes</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm p-3">
-            <h3>D. Pedro I</h3>
-            <p>Protagonista da independência, foi quem declarou o famoso "Independência ou Morte!". Tornou-se o primeiro
-              imperador do Brasil.</p>
-          </div>
+    <!-- Início -->
+    <header id="inicio">
+        <div class="container">
+            <h1>Semana de Arte Moderna de 1922</h1>
+            <p class="lead">Um marco na história da cultura brasileira</p>
         </div>
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm p-3">
-            <h3>D. Leopoldina</h3>
-            <p>Esposa de D. Pedro I, teve papel crucial ao apoiar a decisão de proclamar a independência, sendo
-              considerada uma das articuladoras políticas do movimento.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm p-3">
-            <h3>José Bonifácio</h3>
-            <p>Ministro e conselheiro de D. Pedro, conhecido como "Patriarca da Independência", articulou politicamente
-              a separação de Portugal.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm p-3">
-            <h3>Maria Quitéria</h3>
-            <p>Heroína da independência, vestiu-se de homem para lutar contra as tropas portuguesas na Bahia.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Curiosidades -->
-  <section id="curiosidades" class="container py-5">
-    <h2 class="text-center mb-4">Curiosidades</h2>
-    <div class="accordion" id="accordionCuriosidades">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#curio1">
-            O "grito do Ipiranga" aconteceu mesmo?
-          </button>
-        </h2>
-        <div id="curio1" class="accordion-collapse collapse show" data-bs-parent="#accordionCuriosidades">
-          <div class="accordion-body">
-            A cena clássica foi romantizada. Há registros de que D. Pedro estava em viagem, cansado e com problemas de
-            saúde, mas a frase simbólica ficou marcada.
-          </div>
+    <!-- História -->
+    <section id="historia">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>O movimento</h2>
+                    <p>A Semana de Arte Moderna de 1922, realizada em São Paulo, marcou a ruptura com os padrões artísticos tradicionais e deu início ao Modernismo no Brasil. O evento reuniu artistas, escritores e músicos que buscavam uma arte nacional, inovadora e conectada com o mundo moderno.</p>
+                    <p>Entre os principais participantes estavam Mário de Andrade, Oswald de Andrade, Tarsila do Amaral, Anita Malfatti e Heitor Villa-Lobos.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Anita_Malfatti_-_A_boba.jpg/330px-Anita_Malfatti_-_A_boba.jpg" alt="Obra A Boba, de Anita Malfatti" class="img-fluid shadow">
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#curio2">
-            Portugal aceitou de imediato?
-          </button>
-        </h2>
-        <div id="curio2" class="accordion-collapse collapse" data-bs-parent="#accordionCuriosidades">
-          <div class="accordion-body">
-            Não. Houve guerras na Bahia, no Maranhão e no Pará até o reconhecimento da independência em 1825.
-          </div>
+    <!-- Galeria -->
+    <section id="galeria" class="bg-light">
+        <div class="container text-center">
+            <h2>Galeria de Obras</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Tarsila_do_Amaral_-_Abaporu.jpg" alt="Abaporu, de Tarsila do Amaral" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Anita_Malfatti_-_O_homem_amarelo.jpg/300px-Anita_Malfatti_-_O_homem_amarelo.jpg" alt="O Homem Amarelo, de Anita Malfatti" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Portinari_-_O_Lavrador_de_Caf%C3%A9.jpg" alt="O Lavrador de Café, de Cândido Portinari" class="img-fluid">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Formulário -->
-  <section id="formulario" class="container py-5">
-    <h2 class="text-center mb-4">Deixe sua opinião</h2>
-    <form id="feedbackForm" class="mx-auto" style="max-width: 600px;">
-      <div class="mb-3">
-        <label for="nome" class="form-label">Nome</label>
-        <input type="text" id="nome" class="form-control" required>
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">E-mail</label>
-        <input type="email" id="email" class="form-control" required>
-      </div>
-      <div class="mb-3">
-        <label for="mensagem" class="form-label">Mensagem</label>
-        <textarea id="mensagem" rows="4" class="form-control" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary w-100">Enviar</button>
-      <div id="msgSucesso" class="mt-3 text-success fw-bold" style="display:none;">
-        Obrigado pelo envio! ✅
-      </div>
-    </form>
-  </section>
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2 class="text-center">Entre em contato</h2>
+            <form class="mt-4">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Seu nome">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Seu e-mail">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Sua mensagem"></textarea>
+                </div>
+                <button class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </div>
+    </section>
 
-  <!-- Rodapé -->
-  <footer class="text-center p-4 bg-primary text-white">
-    <p>Projeto fictício desenvolvido para estudos. © 2025</p>
-  </footer>
+    <footer>
+        <p>Desenvolvido por Viviane — Semana de Arte Moderna</p>
+    </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
 </body>
-
 </html>
